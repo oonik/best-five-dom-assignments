@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick your favorite five players</title>
+    <!-- Tailwindcss CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="bg-neutral-700">
+    <!-- header section -->
+    <header>
+        <div class="bg-black w-full h-80 " style="background-image: url(Images/top-5-best.webp)">
+            <h1 class="text-5xl text-amber-500 text-center font-semibold italic pt-16">Pick your favorite five players
+            </h1>
+            <!-- <img class="mx-auto h-96 w-full mt-0" src="/images/top-5-best.webp" alt=""> -->
+            <p class="italic text-white text-center mt-8">The ability to control a football,or 'touch', is the <br> most
+                important
+                skill for a striker to possess.</p>
+        </div>
+    </header>
+    <main>
+        <!-- player section -->
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto ">
+                <!-- player information -->
+                <div class="col-span-2 ...">
+                    <div class="grid grid-cols-3 gap-4 mt-10">
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img class="h-44" src="images/230621042149-01-cristiano-ronaldo-euro-200-apps-062023-restricted.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Cristiano Ronaldo</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center my-2">
+                                <button onclick="addToList(this); this.disabled=true;"
+                                    class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img class="h-44" src="/images/23SS_PR_TS_Football_neymar.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Neymar jr</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center mt-2">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img class="h-44" src="/images/2809867-57962368-2560-1440.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Sergio-Ramos</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center mt-2">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+
+
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img class="h-44" src="/images/2021-06-28T220439Z_2107545029_UP1EH6S1PBPB2_RTRMADP_3_SOCCER-EURO-FRA-SWI-REPORT.webp" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Kylian Mbappe</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center my-2">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white">
+                            <figure>
+                                <img class="h-44" src="/images/AC-Milan-v-AS-Roma---Serie-A-a2c6966780088955a76382abc4cda565.webp" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Mohamed Salah</h2>
+                            <p class="mt-2 text-center"><small>101 Goals</small> . <small>120 Assist</small></p>
+                            <div class="card-action justify-center my-2">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class="btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white ">
+                            <figure>
+                                <img class="h-44" src="/images/gettyimages-1421904276-612x612-1.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Luis Suárez</h2>
+                            <p class="mt-2 text-center"><small>121 Goals</small> . <small>20 Assist</small></p>
+                            <div class="card-action justify-center">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class=" btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white ">
+                            <figure>
+                                <img class="h-44" src="/images/Lionel-Messi-Barcelona-1.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Lionel Messi</h2>
+                            <p class="my-2 text-center"><small>24 Goals</small> . <small>50 Assist</small></p>
+                            <div class="card-action justify-center">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class=" btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white ">
+                            <figure>
+                                <img class="h-44" src="https://i.postimg.cc/tCXKv7t4/gettyimages-1371271710-612x612-1-kala.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Goal Keeper</h2>
+                            <p class="mt-2 text-center"><small>150 Goals</small> . <small>170 Assist</small></p>
+                            <div class="card-action justify-center">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class=" btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                        <div class=" w-full bg-black shadow-xl text-white ">
+                            <figure>
+                                <img class="h-44" src="images//alvarez-(2)-samakal-6414734e56f84.jpg" alt="Player" />
+                            </figure>
+                            <h2 class="text-base mt-2 text-center">Alvarage</h2>
+                            <p class="mt-2 mb-6 text-center"><small>155 Goals</small> . <small>220 Assist</small></p>
+                            <div class="card-action justify-center">
+                                <button onclick="addToList(this);this.disabled=true;"
+                                    class=" btn btn-primary">SELECET</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- added player list part -->
+                <div class="mt-10">
+                    <div class="  bg-black w-100 h-80 ">
+                        <h3 class=" text-center text-white"> Add Your favorites- <span id="total-added-player"
+                                class="text-amber-500">0</span> </h3>
+                        <img class="ml-20 mb-2" src="/images/Ureg-Ureg Marker.png" alt="">
+
+                        <div class="overflow-x-auto ">
+                            <!-- table -->
+                            <table class="table w-full border-separate  border border-slate-400 ">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-black" id="player-name">
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- calculate budget part -->
+                    <div class="  text-white bg-black w-100  mt-16">
+                        <h3 class="text-center">Budget</h3>
+                        <img class="ml-20" src="/images/Ureg-Ureg Marker.png" alt="">
+                        <p class="ml-2 mt-2"> Per player: <input class="w-1/2 bg-zinc-400 hover:bg-zinc-600 rounded "
+                                type="text" name="" id="player-cost"></p>
+                        <button id="btn-calculate" class="btn btn-primary my-3 justify-center ml-28">Calculate</button>
+                        <p>Player Expenses: $ <span id="player-expenses"> 0</span></p>
+                        <p class="m-2 "> Manager: <input class="w-1/2 bg-zinc-400 hover:bg-zinc-600 rounded "
+                                type="text" name="" id="manager-cost"></p>
+                        <p class="ml-2"> Coach: <input class="w-1/2 bg-zinc-400 ml-4 hover:bg-zinc-600 rounded "
+                                type="text" name="" id="coach-cost"></p>
+                        <button id="calculate-total" class="btn btn-primary my-3 justify-center ml-20">Calculate
+                            total</button>
+                        <p class="ml-12  pb-6">Total : <span class="ml-12 ">$ </span> <span id="final-total"
+                                class="text-amber-500"> 0</span></p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer part -->
+    <footer>
+        <div class="text-center text-white bg-black w-100 h-20 mt-6">
+            <p class="pt-12 text-xs"> All Right Deserved@Fahad Mridha 2023. </p>
+        </div>
+    </footer>
+    <!-- script file link -->
+    <script src="/js/common.js"></script>
+    <script src="/js/budget.js"></script>
+</body>
+
+</html>
